@@ -1,0 +1,78 @@
+/* Courses.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .courses-container {
+    background: url('https://www.internetsociety.org/wp-content/uploads/2023/03/TeL-Grant-Application-Course-450x225.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 20px; /* Padding for the content area */
+    min-height: 100vh; /* Ensure it covers the full height of the viewport */
+  }
+  
+  .courses-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .courses-content h1 {
+    color: #003a71; /* Dark Blue */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .course-card {
+    background: #ffffff; /* White background for the card */
+    padding: 30px; /* Larger padding for bigger cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Center text inside the card */
+  }
+  
+  .course-card h3 {
+    font-size: 22px; /* Larger font size */
+    color: #004b87; /* Darker Blue */
+    margin-bottom: 15px; /* Increased margin */
+  }
+  
+  .course-card p {
+    font-size: 18px; /* Larger font size */
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .courses-container {
+      padding: 20px;
+    }
+  
+    .courses-content {
+      padding: 15px;
+    }
+  
+    .course-card {
+      width: 100%; /* Full width on small screens */
+    }
+  }

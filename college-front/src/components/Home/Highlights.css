@@ -1,0 +1,33 @@
+.highlights-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  position: relative;
+}
+
+.highlights-wrapper {
+  display: flex;
+  width: 200%; /* Adjust this to fit duplicated content */
+  animation: scroll 20s linear infinite;
+}
+
+.highlight-item {
+  flex: 0 0 16.66%; /* Adjust width for each highlight item */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

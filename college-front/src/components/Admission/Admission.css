@@ -1,0 +1,82 @@
+/* Admission Page Styling */
+.page-background {
+  background: #ffffff; /* White background for the Admission page */
+  padding: 60px 20px; /* Padding around content */
+  margin-top: 60px; /* Margin to ensure content is below the fixed header */
+  min-height: calc(100vh - 60px); /* Full height minus the header height */
+}
+
+.page-background .container {
+  max-width: 1200px; /* Increased max-width to cover more of the page */
+  width: 90%; /* Make the container wider, covering more of the page */
+  margin: 0 auto;
+  padding: 40px; /* Increased padding for a more spacious feel */
+  background: #f9f9f9; /* Light background for better contrast */
+  border-radius: 12px; /* Slightly more rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for better depth */
+}
+
+.page-background h2 {
+  margin-bottom: 30px; /* More space below the heading */
+  color: #003a71; /* Dark Blue */
+  font-size: 2rem; /* Larger font size for the heading */
+}
+
+.page-background .form-group {
+  margin-bottom: 20px;
+}
+
+.page-background .form-group label {
+  display: block;
+  margin-bottom: 10px; /* Slightly more space between label and input */
+  font-weight: bold;
+  font-size: 1rem; /* Larger font size for better readability */
+}
+
+.page-background .form-group input,
+.page-background .form-group select,
+.page-background .form-group textarea {
+  width: 100%; /* Full-width inputs, selects, and textareas */
+  padding: 12px; /* Increased padding for larger input boxes */
+  border: 2px solid #003a71; /* Bold border color */
+  border-radius: 8px; /* More rounded corners for inputs */
+  font-size: 16px;
+  background-color: #f0f4f8; /* Light background color */
+}
+
+.page-background .form-group textarea {
+  resize: vertical;
+  min-height: 120px; /* Taller textareas for better usability */
+}
+
+.page-background button {
+  padding: 12px 24px; /* Increased button padding */
+  background-color: #003a71;
+  color: white;
+  border: none;
+  border-radius: 8px; /* More rounded button */
+  cursor: pointer;
+  font-size: 1.2rem; /* Larger button text */
+  transition: background-color 0.3s;
+}
+
+.page-background button:hover {
+  background-color: #004b87;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-background .container {
+    width: 95%; /* Adjust width for smaller screens */
+    padding: 20px; /* Reduced padding on smaller screens */
+  }
+
+  .page-background h2 {
+    font-size: 1.5rem; /* Smaller heading font size for smaller screens */
+  }
+
+  .page-background .form-group label,
+  .page-background button {
+    font-size: 1rem; /* Adjust label and button font sizes */
+  }
+}

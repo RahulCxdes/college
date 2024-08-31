@@ -1,0 +1,64 @@
+.new-enrollments-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.new-enrollments-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #003a71; /* Dark blue color for the heading */
+  font-size: 1.8rem; /* Larger font size for heading */
+}
+
+.new-enrollments-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff; /* White background for the table */
+  border-radius: 8px; /* Rounded corners for the table */
+  overflow: hidden; /* Hide overflow to maintain rounded corners */
+}
+
+.new-enrollments-table th, .new-enrollments-table td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increased padding for better readability */
+  text-align: left;
+}
+
+.new-enrollments-table th {
+  background-color: #4CAF50; /* Green background for table headers */
+  color: white; /* White text for headers */
+  font-weight: bold; /* Bold text for headers */
+}
+
+.new-enrollments-table tr:nth-child(even) {
+  background-color: #f4f4f4; /* Light grey background for even rows */
+}
+
+.new-enrollments-table tr:hover {
+  background-color: #e0f7fa; /* Light cyan background for hovered rows */
+}
+
+.new-enrollments-table button {
+  padding: 8px 12px; /* Larger padding for buttons */
+  border: none;
+  border-radius: 4px; /* Rounded corners for buttons */
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem; /* Slightly larger font size for buttons */
+  transition: background-color 0.3s, opacity 0.3s; /* Smooth transition */
+}
+
+.new-enrollments-table button:hover {
+  opacity: 0.9; /* Slightly reduced opacity on hover */
+}
+
+.new-enrollments-table button:first-of-type {
+  background-color: #4CAF50; /* Green button for Confirm */
+}
+
+.new-enrollments-table button:last-of-type {
+  background-color: #f44336; /* Red button for Delete */
+}
